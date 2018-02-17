@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		040A2D852035DB510095331C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A2D842035DB510095331C /* AppDelegate.swift */; };
-		040A2D872035DB510095331C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A2D862035DB510095331C /* ViewController.swift */; };
+		040A2D872035DB510095331C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A2D862035DB510095331C /* LoginView.swift */; };
 		040A2D8A2035DB510095331C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040A2D882035DB510095331C /* Main.storyboard */; };
 		040A2D8C2035DB510095331C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040A2D8B2035DB510095331C /* Assets.xcassets */; };
 		040A2D8F2035DB510095331C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040A2D8D2035DB510095331C /* LaunchScreen.storyboard */; };
 		040A2D9A2035DB510095331C /* iOS_ReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A2D992035DB510095331C /* iOS_ReviewTests.swift */; };
+		040A2DA820372F310095331C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A2DA720372F310095331C /* LoginViewModel.swift */; };
+		040A2DA920372F310095331C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A2DA720372F310095331C /* LoginViewModel.swift */; };
 		1D56CD87586BCAAD14E356CC /* Pods_iOS_Review.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF9585EB85FCF77482B6B52 /* Pods_iOS_Review.framework */; };
 		CD47CFA621A44125B97D9937 /* Pods_iOS_ReviewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2F96300E0D309ECAEF0B86 /* Pods_iOS_ReviewTests.framework */; };
 /* End PBXBuildFile section */
@@ -30,7 +32,7 @@
 /* Begin PBXFileReference section */
 		040A2D812035DB510095331C /* iOS-Review.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Review.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		040A2D842035DB510095331C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		040A2D862035DB510095331C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		040A2D862035DB510095331C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		040A2D892035DB510095331C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		040A2D8B2035DB510095331C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		040A2D8E2035DB510095331C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		040A2D952035DB510095331C /* iOS-ReviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-ReviewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		040A2D992035DB510095331C /* iOS_ReviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_ReviewTests.swift; sourceTree = "<group>"; };
 		040A2D9B2035DB510095331C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040A2DA720372F310095331C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1EB54047466E52CF647F887D /* Pods-iOS-Review.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Review.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Review/Pods-iOS-Review.release.xcconfig"; sourceTree = "<group>"; };
 		34496AEFB25E0B04194D0E7C /* Pods-iOS-ReviewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-ReviewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-ReviewTests/Pods-iOS-ReviewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C2F96300E0D309ECAEF0B86 /* Pods_iOS_ReviewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_ReviewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +96,6 @@
 				040A2DA52035E9160095331C /* Views */,
 				040A2DA42035E69C0095331C /* Model */,
 				040A2D842035DB510095331C /* AppDelegate.swift */,
-				040A2D862035DB510095331C /* ViewController.swift */,
 				040A2D882035DB510095331C /* Main.storyboard */,
 				040A2D8B2035DB510095331C /* Assets.xcassets */,
 				040A2D8D2035DB510095331C /* LaunchScreen.storyboard */,
@@ -121,6 +123,7 @@
 		040A2DA52035E9160095331C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				040A2D862035DB510095331C /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 		040A2DA62035E9220095331C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				040A2DA720372F310095331C /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -365,8 +369,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040A2D872035DB510095331C /* ViewController.swift in Sources */,
+				040A2D872035DB510095331C /* LoginView.swift in Sources */,
 				040A2D852035DB510095331C /* AppDelegate.swift in Sources */,
+				040A2DA820372F310095331C /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040A2DA920372F310095331C /* LoginViewModel.swift in Sources */,
 				040A2D9A2035DB510095331C /* iOS_ReviewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
