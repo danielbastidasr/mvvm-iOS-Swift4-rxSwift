@@ -23,6 +23,7 @@ class LoginView: UIViewController {
     // Rx vars
     var rxEmailText: Observable<String>!
     var rxPasswordText: Observable<String>!
+    var rxLoginButton: Observable<Void>!
 
     //Dependency Injections
     var loginViewModel:LoginViewModel!
@@ -30,9 +31,12 @@ class LoginView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         //Bind Observables from the UI
         self.rxEmailText = emailTextField.rx.text.map{$0 ?? ""}
         self.rxPasswordText = passwordTextField.rx.text.map{$0 ?? ""}
+        self.rxLoginButton = loginButton.rx.tap.map{$0}
         
         self.loginViewModel = LoginViewModel(loginView: self)
 

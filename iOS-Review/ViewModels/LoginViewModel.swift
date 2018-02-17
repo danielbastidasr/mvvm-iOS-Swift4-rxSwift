@@ -33,6 +33,14 @@ class  LoginViewModel{
             loginView.bindToButtonActive(enabled: isValid)
         }).disposed(by: disposeBag)
         
+        loginView.rxLoginButton.subscribe (onNext: {
+            _ in
+            
+            loginView.performSegue(withIdentifier: SegueListEvents, sender: self.loginView.storyboard)
+            
+        }).disposed(by: disposeBag)
+        
+        
     }
     
    

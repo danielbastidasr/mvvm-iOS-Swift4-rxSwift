@@ -15,6 +15,10 @@
 		040A2D9A2035DB510095331C /* iOS_ReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A2D992035DB510095331C /* iOS_ReviewTests.swift */; };
 		040A2DA820372F310095331C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A2DA720372F310095331C /* LoginViewModel.swift */; };
 		040A2DA920372F310095331C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A2DA720372F310095331C /* LoginViewModel.swift */; };
+		040A2DAC2038B5460095331C /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A2DAB2038B5460095331C /* Segues.swift */; };
+		040A2DAD2038B5460095331C /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A2DAB2038B5460095331C /* Segues.swift */; };
+		040A2DAF2038B72E0095331C /* ListEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A2DAE2038B72E0095331C /* ListEventsView.swift */; };
+		040A2DB02038B72E0095331C /* ListEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A2DAE2038B72E0095331C /* ListEventsView.swift */; };
 		1D56CD87586BCAAD14E356CC /* Pods_iOS_Review.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF9585EB85FCF77482B6B52 /* Pods_iOS_Review.framework */; };
 		CD47CFA621A44125B97D9937 /* Pods_iOS_ReviewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2F96300E0D309ECAEF0B86 /* Pods_iOS_ReviewTests.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +45,8 @@
 		040A2D992035DB510095331C /* iOS_ReviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_ReviewTests.swift; sourceTree = "<group>"; };
 		040A2D9B2035DB510095331C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		040A2DA720372F310095331C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		040A2DAB2038B5460095331C /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
+		040A2DAE2038B72E0095331C /* ListEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventsView.swift; sourceTree = "<group>"; };
 		1EB54047466E52CF647F887D /* Pods-iOS-Review.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Review.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Review/Pods-iOS-Review.release.xcconfig"; sourceTree = "<group>"; };
 		34496AEFB25E0B04194D0E7C /* Pods-iOS-ReviewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-ReviewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-ReviewTests/Pods-iOS-ReviewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C2F96300E0D309ECAEF0B86 /* Pods_iOS_ReviewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_ReviewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +98,7 @@
 		040A2D832035DB510095331C /* iOS-Review */ = {
 			isa = PBXGroup;
 			children = (
+				040A2DAA2038B5200095331C /* Constants */,
 				040A2DA62035E9220095331C /* ViewModels */,
 				040A2DA52035E9160095331C /* Views */,
 				040A2DA42035E69C0095331C /* Model */,
@@ -124,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				040A2D862035DB510095331C /* LoginView.swift */,
+				040A2DAE2038B72E0095331C /* ListEventsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +142,14 @@
 				040A2DA720372F310095331C /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		040A2DAA2038B5200095331C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				040A2DAB2038B5460095331C /* Segues.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		32173482C64D10D30300B176 /* Frameworks */ = {
@@ -372,6 +388,8 @@
 				040A2D872035DB510095331C /* LoginView.swift in Sources */,
 				040A2D852035DB510095331C /* AppDelegate.swift in Sources */,
 				040A2DA820372F310095331C /* LoginViewModel.swift in Sources */,
+				040A2DAF2038B72E0095331C /* ListEventsView.swift in Sources */,
+				040A2DAC2038B5460095331C /* Segues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +398,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				040A2DA920372F310095331C /* LoginViewModel.swift in Sources */,
+				040A2DAD2038B5460095331C /* Segues.swift in Sources */,
 				040A2D9A2035DB510095331C /* iOS_ReviewTests.swift in Sources */,
+				040A2DB02038B72E0095331C /* ListEventsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
